@@ -16,12 +16,36 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.bg-mouseHover::before {
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.06),
+    transparent 40%
+  );
+}
+.bg-mouseHover::after {
+  background: radial-gradient(
+    200px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 255, 255, 0.6),
+    transparent 50%
+  );
+}
+.bg-mouseHoverBlur::before {
+  background: radial-gradient(
+    circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 0, 187, 0.1),
+    transparent 40%
+  );
+}
+.bg-mouseHoverBlur::after {
+  background: radial-gradient(
+    200px circle at var(--mouse-x) var(--mouse-y),
+    rgba(255, 0, 187, 0.1),
+    rgba(0, 144, 193, 0.1),
+    transparent 50%
+  );
+}
+
+.one-px-margin {
+  margin: 1px;
 }
