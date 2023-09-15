@@ -49,3 +49,8 @@
 .one-px-margin {
   margin: 1px;
 }
+
+.translateZ {
+  transform: translateZ(40px);
+
+}

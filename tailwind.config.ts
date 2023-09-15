@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+const plugin = require('tailwindcss/plugin');
 
 const config: Config = {
   content: [
@@ -31,6 +32,19 @@ const config: Config = {
       xxl: "3000px",
     },
   },
-  plugins: [require("@tailwindcss/typography")],
+  plugins: [require("@tailwindcss/typography"), plugin(
+    
+    function({ matchUtilities, theme }:any) {
+    matchUtilities(
+      {
+        'translate-z': (value:any) => ({
+          '--tw-translate-z': value,
+          transform: ` translate3d(var(--tw-translate-x), var(--tw-translate-y), var(--tw-translate-z)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y))`,
+        }), // this is actual CSS
+      },
+      { values: theme('translate'), supportsNegativeValues: true }
+    )
+  })
+],
 };
 export default config;

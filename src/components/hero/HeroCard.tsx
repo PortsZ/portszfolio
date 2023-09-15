@@ -4,10 +4,10 @@ import { useMotionValue, useTransform, motion } from "framer-motion";
 const HeroCard = ({ children }: { children: ReactNode }) => {
   const cardX = useMotionValue(0);
   const cardY = useMotionValue(0);
-  const rotateX = useTransform(cardY, [-500, 500], [5, -5]);
-  const rotateY = useTransform(cardX, [-500, 500], [-5, 5]);
-  const cardRotateX = useTransform(cardY, [-500, 500], [10, -10]);
-  const cardRotateY = useTransform(cardX, [-500, 500], [-10, 10]);
+  const rotateX = useTransform(cardY, [-300, 300], [-10, 10]);
+  const rotateY = useTransform(cardX, [-300, 300], [10, -10]);
+  // const cardRotateX = useTransform(cardY, [-500, 500], [10, -10]);
+  // const cardRotateY = useTransform(cardX, [-500, 500], [-10, 10]);
 
   const handleMouseMove = (event: any) => {
     const cardRect = event.currentTarget.getBoundingClientRect();
@@ -17,8 +17,14 @@ const HeroCard = ({ children }: { children: ReactNode }) => {
     const offsetX = event.clientX - cardCenterX;
     const offsetY = event.clientY - cardCenterY;
 
-    cardX.set(offsetX);
+    cardX.set(-offsetX);
     cardY.set(offsetY);
+
+    console.log(`cardX: ${cardX.get()}, cardY: ${cardY.get()}, rotateX: ${rotateX.get()}, rotateY: ${rotateY.get()}`);
+
+    
+
+    
   };
 
   const handleMouseLeave = () => {
@@ -26,20 +32,7 @@ const HeroCard = ({ children }: { children: ReactNode }) => {
     cardY.set(0);
   };
 
-  const bgClasses: {
-    [key: string]: string;
-    house: string;
-    hero: string;
-  } = {
-    house: "bg-house",
-    hero: "bg-hero",
-    map: "bg-map",
-    dimensionar: "bg-kitSize",
-  };
 
-  function getBackgroundClass(icon: string | undefined) {
-    return icon ? bgClasses[icon] : "";
-  }
 
   return (
     <motion.div
@@ -47,11 +40,10 @@ const HeroCard = ({ children }: { children: ReactNode }) => {
         margin: "auto",
         width: "100%",
         height: "100%",
-        transformStyle: "preserve-3d",
-        perspective: 200,
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        // transformStyle: "preserve-3d",
         rotateX,
         rotateY,
       }}
@@ -62,9 +54,7 @@ const HeroCard = ({ children }: { children: ReactNode }) => {
         transition={{ velocity: 0 }}
         style={{
           width: "100%",
-          transformStyle: "preserve-3d",
-          perspective: 200,
-          transform: `rotateX(${cardRotateX}deg) rotateY(${cardRotateY}deg)`,
+          // transform: `rotateX(${cardRotateX}deg) rotateY(${cardRotateY}deg)`,
         }}
         className="hover:drop-shadow-contrast2 rounded hover:transition-all hover:duration-200"
       >

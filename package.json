@@ -16,10 +16,13 @@
     "eslint": "8.47.0",
     "eslint-config-next": "13.4.13",
     "framer-motion": "^10.15.1",
+    "install": "^0.13.0",
     "next": "13.4.13",
     "postcss": "8.4.27",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-parallax-tilt": "^1.7.166",
+    "react-tilt": "^1.0.2",
     "tailwindcss": "^0.0.0-insiders.4f404ff",
     "typescript": "5.1.6"
   },

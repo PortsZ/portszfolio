@@ -2,6 +2,8 @@
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import HeroCard from "./HeroCard";
+import Tilt from "react-parallax-tilt";
+import { motion } from "framer-motion";
 
 const Hero = () => {
   const cardsRef = useRef<HTMLDivElement | null>(null);
@@ -40,38 +42,62 @@ const Hero = () => {
   //
   //
 
+  const defaultOptions = {
+    reverse: false, // reverse the tilt direction
+    max: 15, // max tilt rotation (degrees)
+    perspective: 2000, // Transform perspective, the lower the more extreme the tilt gets.
+    scale: 0.9, // 2 = 200%, 1.5 = 150%, etc..
+    speed: 300, // Speed of the enter/exit transition
+    transition: true, // Set a transition on enter/exit.
+    axis: null, // What axis should be disabled. Can be X or Y.
+    reset: true, // If the tilt effect has to be reset on exit.
+    easing: "cubic-bezier(.3,.65,.81,.3)", // Easing on enter/exit.
+  };
+
   return (
-    <HeroCard>
-      <div className="flex h-[80vh] w-full items-center justify-center rounded-lg bg-opacity-100 bg-[url(/Hero.jpg)] bg-cover bg-no-repeat p-24 backdrop-blur-lg">
-        <div
-          ref={cardsRef}
-          className="flex w-full justify-start  p-4 font-bold text-white"
-        >
+    <>
+      {/* <HeroCard>
+      
+      </HeroCard> */}
+      <Tilt
+        transitionEasing="cubic-bezier(0,.91,.42,1)"
+        scale={0.95}
+        perspective={2500}
+        tiltMaxAngleX={10}
+        className="flex h-[80vh] w-full items-center justify-center rounded-lg bg-opacity-100 bg-[url(/Hero.jpg)] bg-cover bg-no-repeat 
+        sm:p-24 backdrop-blur-lg"
+      >
           <div
-            className=" bg-mouseHoverBlur flex w-1/2 flex-col items-end justify-center rounded bg-background bg-opacity-30 p-16 backdrop-blur-3xl
-        
-          before:pointer-events-none before:absolute before:left-0 before:top-0 before:z-[3] before:h-full before:w-full before:rounded-lg before:opacity-0 before:transition-all before:duration-500 before:content-['']
-          
-          after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-[1] after:h-full after:w-full after:rounded-lg after:opacity-0
-          after:transition-all after:duration-500 after:content-[''] before:hover:opacity-100
-          after:group-hover:opacity-100"
+            ref={cardsRef}
+            className="flex flex-col  w-full justify-center items-center sm:items-start p-4 font-bold text-white"            
           >
-            <h1 className="text-5xl">
-              Hi! I'm{" "}
-              <span className=" bg-gradient-to-br from-primary via-tertiary  to-primary bg-clip-text text-transparent">
-                JP Portes
-              </span>
-            </h1>
-            <h2 className="text-2xl  text-zinc-300">Fullstack Developer</h2>
-            <a href="/" className="text-zinc-300 hover:text-secondary">
-              <p className="text-sm italic underline underline-offset-2 ">
-                Know More
-              </p>
-            </a>
+            <div
+              className=" bg-mouseHoverBlur flex md:w-3/4 lg:w-1/2 gap-2 w-11/12 flex-col items-start sm:items-end justify-center rounded bg-background bg-opacity-30 p-16 backdrop-blur-3xl
+                      
+                          before:pointer-events-none before:absolute before:left-0 before:top-0 before:z-[3] before:h-full before:w-full before:rounded-lg before:opacity-0 before:transition-all before:duration-500 before:content-['']
+
+                          after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-[1] after:h-full after:w-full after:rounded-lg after:opacity-0
+                          after:transition-all after:duration-500 after:content-[''] before:hover:opacity-100
+                          after:group-hover:opacity-100"
+              
+            >
+              <h1 className="text-5xl">
+                Hi! I'm{" "}
+                <span className=" bg-gradient-to-br from-primary via-tertiary  to-primary bg-clip-text text-transparent">
+                  JP Portes
+                </span>
+              </h1>
+              <h2 className="text-2xl  text-zinc-300">Fullstack Developer</h2>
+              <a href="#about" className="text-zinc-300 bg-primary p-2 px-4 rounded-full scroll-smooth">
+                <p className="text-black ">
+                  Know More
+                </p>
+              </a>
+            </div>
           </div>
-        </div>
-      </div>
-    </HeroCard>
+       
+      </Tilt>
+    </>
   );
 };
 

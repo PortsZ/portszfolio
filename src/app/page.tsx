@@ -4,28 +4,38 @@ import CardGrid from "@/components/grids/CardGrid";
 import Hero from "@/components/hero/Hero";
 import Stack from "@/components/stack/Stack";
 import CardFlex from "@/components/flex/CardFlex";
+import AboutMe from "@/components/about/AboutMe";
+import SmallAbout from "@/components/about/SmallAbout";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-start">
-      <section className="flex min-h-screen w-full flex-grow items-center justify-center p-8 sm:p-24">
+    <main className="flex min-h-screen flex-col items-center justify-start scroll-smooth">
+      <section className="flex min-h-screen w-full flex-grow items-center justify-center p-2 ss:p-8 sm:p-24">
         <Hero />
       </section>
-      <section className="flex w-full items-center justify-center"></section>
-      <section className="flex w-full items-center justify-center p-8 sm:p-24">
+      <section id='about' className="flex w-full items-center justify-center">
+        <SmallAbout />
+      </section>
+      
+      <section id="stack" className="flex w-full items-center justify-center ss:p-8 sm:p-24">
         <CardFlex>
           <HoverableCard>
             <Stack />
           </HoverableCard>
         </CardFlex>
       </section>
+
       <section className="flex w-full justify-center">
         <CardGrid>
           <HoverableCard />
           <HoverableCard />
-          <HoverableCard>TEST</HoverableCard>
+          <HoverableCard>My work</HoverableCard>
         </CardGrid>
       </section>
+
+      
+
+      
     </main>
   );
 }
