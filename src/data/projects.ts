@@ -1,3 +1,7 @@
+import { ProjectInterface } from "./projectTypes";
+
+
+
 const antaresTechStack = [
   "Laravel and Python for sizing backend microservice (AWS)",
   "Next.js/Prisma/Planetscale/MySQL for frontend and backend (Vercel)",
@@ -19,7 +23,6 @@ const antaresFeatures = [
 //!================================================================================================
 export const antares = {
   id: 'antares',
-  name: "Antares Solar",
   features: antaresFeatures,
   techStack: antaresTechStack,
   preview: {
@@ -32,7 +35,6 @@ export const antares = {
 
 export const martPlus = {
   id: 'mart-plus',
-  name: "Mart Plus",
   features: antaresFeatures,
   techStack: antaresTechStack,
   preview: {
@@ -43,7 +45,20 @@ export const martPlus = {
   }
 };
 
+export const volumeSpikeBot = {
+  id: 'volume-spike-bot',
+  features: antaresFeatures,
+  techStack: antaresTechStack,
+  preview: {
+    logo: "/images/MartPlus-logo.png",
+    title: "Volume Spike Trading Bot",
+    description: "A Supermaket CRUD with a shopping cart and a checkout system.",
+    shortStack: "Next.js, Prisma, Planetscale, MySQL, Vercel",
+  }
+};
 
 
 
-export const projects = [antares]
+
+
+export const projects:ProjectInterface[] = [antares, martPlus]

@@ -9,7 +9,7 @@ const HoverableCard = ({ children }: any) => {
     whileHover={{scale: 1.01}}
       className={`
 	          bg-mouseHover relative 
-            flex h-auto w-full  flex-col items-center
+            flex h-full w-full  flex-col items-center
             justify-center rounded-[10px] bg-zinc-700 shadow-lg 
 
 			      before:absolute before:left-0 before:top-0 before:z-[3] before:h-full before:w-full before:rounded-lg before:opacity-0 before:transition-all before:duration-500 before:content-[''] after:absolute

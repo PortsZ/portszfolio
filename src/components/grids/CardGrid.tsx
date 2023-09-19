@@ -44,7 +44,7 @@ const CardGrid = ({ children }: any) => {
     <div
       id="cards"
       ref={cardsRef}
-      className="group grid h-full w-full max-w-7xl grid-cols-3 gap-2 p-8"
+      className="group grid auto-rows-max h-full w-full max-w-7xl grid-cols-3 gap-2 p-8"
     >
       {children}
     </div>

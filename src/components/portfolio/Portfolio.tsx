@@ -5,9 +5,13 @@ import CardGrid from "../grids/CardGrid";
 import HoverableCard from "../grids/HoverableCard";
 import { AnimatePresence, motion } from "framer-motion";
 import {projects} from "../../data/projects";
+import ProjectCard from "./ProjectCard"
+import { ProjectInterface } from "@/data/projectTypes";
+
+
 
 const Portfolio = () => {
-  const [selectedProject, setSelectedProject] = useState({}as any | null);
+  const [selectedProject, setSelectedProject] = useState<ProjectInterface | null>(null);
 
   useEffect(() => {
     console.log(selectedProject);
@@ -18,7 +22,7 @@ const Portfolio = () => {
     <div className="flex w-full flex-col items-center gap-4">
       <h2 className="text-center text-3xl font-bold">My Portfolio</h2>
       <CardGrid>
-        {projects.map((project) => {
+        {projects && projects.map((project) => {
           return (
             <motion.div
               layoutId={project.id}
@@ -27,9 +31,10 @@ const Portfolio = () => {
               onClick={() => setSelectedProject(project)}
             >
               <HoverableCard>
-                <div>
-                  <h2 className="text-2xl font-bold">{project.preview.title}</h2>
-                  <p className="text-sm">{project.preview.description}</p>
+                <div className="">
+                  <h2 className="text-2xl text-secondary font-bold">{project.preview.title}</h2>
+                  <p className="text-sm text-zinc-300">{project.preview.description}</p>
+                  <p className="text-sm text-zinc-400">{project.preview.shortStack}</p>
                 </div>
               </HoverableCard>
             </motion.div>
@@ -56,8 +61,13 @@ const Portfolio = () => {
             >
               <HoverableCard>
                 <div>
-                  {/* <h2 className="text-2xl font-bold">{selectedProject.preview.title}</h2>
-                  <p className="text-sm">{selectedProject.preview.description}</p> */}
+                
+                  <ProjectCard
+                    title={selectedProject.preview.title}
+                    techStack={selectedProject.techStack}
+                    features={selectedProject.features}
+                  
+                  />
                   
                 </div>
               </HoverableCard>

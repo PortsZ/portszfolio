@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 
 interface ProjectCardProps {
   title: string;
-  description: string;
+  description?: string;
   techStack: string[];
   features: string[];
 }
@@ -21,23 +21,23 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, description, techStack
         initial={{ y: -20 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.2 }}
-        className='text-2xl font-semibold text-primary mb-2'
+        className='text-2xl font-semibold text-white mb-2'
       >
         {title}
       </motion.h3>
-      <motion.p 
+      {description && <motion.p 
         initial={{ y: 20 }}
         animate={{ y: 0 }}
         transition={{ delay: 0.3 }}
         className='text-sm mb-4 text-secondary'
       >
         {description}
-      </motion.p>
-      <h4 className='text-lg font-semibold mb-1 text-tertiary'>Tech Stack:</h4>
+      </motion.p>}
+      <h4 className='text-lg font-semibold mb-1 text-secondary'>Tech Stack:</h4>
       <ul className='list-disc list-inside mb-2'>
         {techStack.map((tech, index) => <li key={index}>🔧 {tech}</li>)}
       </ul>
-      <h4 className='text-lg font-semibold mb-1 text-tertiary'>Features:</h4>
+      <h4 className='text-lg font-semibold mb-1 text-secondary'>Features:</h4>
       <ul className='list-disc list-inside'>
         {features.map((feature, index) => <li key={index}>✨ {feature}</li>)}
       </ul>
