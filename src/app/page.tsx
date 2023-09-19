@@ -1,11 +1,14 @@
 import React from "react";
 import HoverableCard from "@/components/grids/HoverableCard";
-import CardGrid from "@/components/grids/CardGrid";
 import Hero from "@/components/hero/Hero";
 import Stack from "@/components/stack/Stack";
 import CardFlex from "@/components/flex/CardFlex";
-import AboutMe from "@/components/about/AboutMe";
 import SmallAbout from "@/components/about/SmallAbout";
+import Portfolio from "@/components/portfolio/Portfolio";
+//
+//
+//
+//
 
 export default function Home() {
   return (
@@ -13,11 +16,14 @@ export default function Home() {
       <section className="flex min-h-screen w-full flex-grow items-center justify-center p-2 ss:p-8 sm:p-24">
         <Hero />
       </section>
-      <section id='about' className="flex w-full items-center justify-center">
+      <section id="about" className="flex w-full items-center justify-center">
         <SmallAbout />
       </section>
-      
-      <section id="stack" className="flex w-full items-center justify-center ss:p-8 sm:p-24">
+
+      <section
+        id="stack"
+        className="flex w-full items-center justify-center ss:p-8 sm:p-24"
+      >
         <CardFlex>
           <HoverableCard>
             <Stack />
@@ -25,17 +31,9 @@ export default function Home() {
         </CardFlex>
       </section>
 
-      <section className="flex w-full justify-center">
-        <CardGrid>
-          <HoverableCard />
-          <HoverableCard />
-          <HoverableCard>My work</HoverableCard>
-        </CardGrid>
+      <section id='portfolio' className="flex w-full justify-center">
+        <Portfolio />
       </section>
-
-      
-
-      
     </main>
   );
 }

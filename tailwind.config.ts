@@ -16,6 +16,16 @@ const config: Config = {
         tertiary: "#0090C1",
         quaternary: "#A200FF",
       },
+      dropShadow: {
+        sun: '0px 0px 50px #FFC505',
+        sun2: '0px 0px 15px #fff',
+        sidebar: '10px 0px 5px #3B2D00',
+        contrast: '0px 1px 2px #7b51ff',
+        contrast2: '0px 0px 5px #7b51ff',
+        productNav: '0px 0px 5px #513d91',
+        productNavActive: '0px 0px 1px #ffb300',
+        tabNavActive: '0px -22px 0px #ffb300',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
