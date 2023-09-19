@@ -82,7 +82,7 @@ const Hero = () => {
               
             >
               <h1 className="text-5xl">
-                Hi! I'm{" "}
+                Hi! I&apos;m{" "}
                 <span className=" bg-gradient-to-br from-primary via-tertiary  to-primary bg-clip-text text-transparent">
                   JP Portes
                 </span>

@@ -43,7 +43,7 @@ const SmallAbout = () => {
           The Academic Foundation 🎓
         </motion.h2>
         <motion.ul className="list-disc list-inside text-zinc-400" variants={childVariants}>
-          <motion.li variants={childVariants}>📚 Bachelor's in Computer Engineering</motion.li>
+          <motion.li variants={childVariants}>📚 Bachelor&apos;s in Computer Engineering</motion.li>
           <motion.li variants={childVariants}>💻 Mastered C, C++, algorithms, and data structures</motion.li>
           <motion.li variants={childVariants}>📘 Specialized topics: functional and object-oriented programming, databases</motion.li>
         </motion.ul>
@@ -69,7 +69,7 @@ const SmallAbout = () => {
         </motion.h2>
         <motion.ul className="list-disc list-inside text-zinc-400" variants={childVariants}>
           <motion.li variants={childVariants}>💼 Freelance programming and investment consulting</motion.li>
-          <motion.li variants={childVariants}>📈 Tripled a client's portfolio value in 4 months</motion.li>
+          <motion.li variants={childVariants}>📈 Tripled a client&apos;s portfolio value in 4 months</motion.li>
           <motion.li variants={childVariants}>👨‍💻 Back to coding and application development</motion.li>
         </motion.ul>
       </motion.div>

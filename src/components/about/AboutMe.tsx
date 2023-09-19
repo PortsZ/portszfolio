@@ -9,7 +9,7 @@ const AboutMe = () => {
       <div className="mb-8">
         <h2 className="text-3xl font-semibold mb-2">The Academic Foundation (2017-2020)</h2>
         <p>
-          My odyssey into the world of software development began in 2017, when I enrolled in a Bachelor's program in Computer Engineering.
+          My odyssey into the world of software development began in 2017, when I enrolled in a Bachelor&apos;s program in Computer Engineering.
           My educational journey was steeped in traditional methods: we often wrote code on paper before implementing it on machines.
           This rigorous academic environment laid a solid foundation for my understanding of programming.
           From mastering C and diving into algorithms and data structures, to delving into code complexity and object-oriented programming in C++, I acquired a well-rounded skill set.
@@ -38,8 +38,8 @@ const AboutMe = () => {
         <h2 className="text-3xl font-semibold mb-2">Stepping into the Real World</h2>
         <p>
           I took on freelance programming jobs and started offering investment consulting services.
-          Opportunity knocked when a client of my mother's hair salon learned about my cryptocurrency expertise.
-          Starting in September 2021, I managed this client's investments, nearly tripling the portfolio value within just four months.
+          Opportunity knocked when a client of my mother&apos;s hair salon learned about my cryptocurrency expertise.
+          Starting in September 2021, I managed this client&apos;s investments, nearly tripling the portfolio value within just four months.
           This journey continued until the end of the cryptocurrency market rally in April 2022.
         </p>
       </div>
@@ -48,13 +48,13 @@ const AboutMe = () => {
         <h2 className="text-3xl font-semibold mb-2">Coming Full Circle</h2>
         <p>
           Despite the detours and challenges, I find myself returning to my roots as a software engineer.
-          I've since shifted my focus back to coding, developing applications and continually honing my programming skills.
+          I&apos;ve since shifted my focus back to coding, developing applications and continually honing my programming skills.
         </p>
       </div>
 
       <div className="mb-8">
         <p>
-          At my core, I am an engineer. This is my story, and it's far from over.
+          At my core, I am an engineer. This is my story, and it&apos;s far from over.
         </p>
       </div>
 
