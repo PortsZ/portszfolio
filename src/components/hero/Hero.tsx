@@ -64,6 +64,7 @@ const Hero = () => {
         scale={0.95}
         perspective={2500}
         tiltMaxAngleX={10}
+        gyroscope={true}
         className="flex h-[80vh] w-full items-center justify-center rounded-lg bg-opacity-100 bg-[url(/Hero.jpg)] bg-cover bg-no-repeat 
         sm:p-24 backdrop-blur-lg"
       >

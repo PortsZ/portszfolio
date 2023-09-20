@@ -31,10 +31,13 @@ const Portfolio = () => {
               onClick={() => setSelectedProject(project)}
             >
               <HoverableCard>
+                <div className="flex gap-4 w-full justify-center h-full items-center ">
+                  <img src="/Hero.jpg" className="object-cover w-[20vw] h-[20vw] md:w-[10vw] md:h-[10vw]  rounded-full "/>
                 <div className="">
                   <h2 className="text-2xl text-secondary font-bold">{project.preview.title}</h2>
                   <p className="text-sm text-zinc-300">{project.preview.description}</p>
                   <p className="text-sm text-zinc-400">{project.preview.shortStack}</p>
+                </div>
                 </div>
               </HoverableCard>
             </motion.div>
