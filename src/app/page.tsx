@@ -5,6 +5,7 @@ import Stack from "@/components/stack/Stack";
 import CardFlex from "@/components/flex/CardFlex";
 import SmallAbout from "@/components/about/SmallAbout";
 import Portfolio from "@/components/portfolio/Portfolio";
+import Navbar from "@/components/navigation/Navbar"
 //
 //
 //
@@ -13,6 +14,9 @@ import Portfolio from "@/components/portfolio/Portfolio";
 export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start scroll-smooth">
+      
+        <Navbar/>
+      
       <section className="flex min-h-screen w-full flex-grow items-center justify-center p-2 ss:p-8 sm:p-24">
         <Hero />
       </section>

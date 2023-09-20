@@ -60,15 +60,12 @@ const Portfolio = () => {
               }}
             >
               <HoverableCard>
-                <div>
-                
+                <div>                
                   <ProjectCard
                     title={selectedProject.preview.title}
                     techStack={selectedProject.techStack}
                     features={selectedProject.features}
-                  
-                  />
-                  
+                  />                  
                 </div>
               </HoverableCard>
             </motion.div>
