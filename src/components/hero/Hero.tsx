@@ -41,6 +41,16 @@ const Hero = () => {
   }, []);
   //
   //
+  const [buttonText, setButtonText] = useState(<span className="cursor-pointer">Know More</span>);
+
+    const handleCopyEmail = () => {
+        navigator.clipboard.writeText('jportes.dev@gmail.com');
+        setButtonText(<span className="cursor-pointer text-tertiary ">Email Copied</span>);
+        setTimeout(() => {
+            setButtonText(<span className="cursor-pointer">Know More</span>);
+        }, 2000);
+    };
+  
 
   const defaultOptions = {
     reverse: false, // reverse the tilt direction
@@ -89,9 +99,9 @@ const Hero = () => {
                 </span>
               </h1>
               <h2 className="text-2xl  text-zinc-300">Fullstack Developer</h2>
-              <a href="#about" className="text-zinc-300 bg-primary p-2 px-4 rounded-full scroll-smooth">
+              <a href="#about" className="text-zinc-300 bg-primary p-2 px-4 rounded-full scroll-smooth" onClick={handleCopyEmail}>
                 <p className="text-black ">
-                  Know More
+                  {buttonText}
                 </p>
               </a>
             </div>
