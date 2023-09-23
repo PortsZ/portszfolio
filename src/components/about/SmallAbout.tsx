@@ -33,10 +33,11 @@ const SmallAbout = () => {
       whileInView="visible"
       viewport={{ margin: "-100px", once: true }}
     >
-      <motion.h1 className="text-4xl font-bold pb-4 text-primary" variants={childVariants}>
+      <motion.h1 className="text-4xl font-bold text-primary" variants={childVariants}>
         My Developer Journey 🛤️
       </motion.h1>
 
+      <motion.a href='/about' variants={childVariants} className='text-base pb-4 text-secondary'>Read the full story &#8618;</motion.a>
       {/* The Academic Foundation */}
       <motion.div className="flex flex-col pb-4" variants={childVariants}>
         <motion.h2 className="text-3xl font-semibold pb-2 text-zinc-300" variants={childVariants}>

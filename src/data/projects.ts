@@ -25,10 +25,14 @@ export const antares = {
   id: 'antares',
   features: antaresFeatures,
   techStack: antaresTechStack,
+  mockup: "/antares/antares-mockup.png",
+  responsibilities: 'Led the development and deployment of Antares Solar, a software for Brazilian installers, focused on PV Kit Sizing and proposal generation , utilizing technologies such as Laravel, Python, Next.js, Prisma, and more. Managed seamless integration of front and back-end technologies, ensuring robust performance and reliability. Administered advanced database and AWS solutions, emphasizing data security and optimized performance. Oversaw the entire project lifecycle, collaborating with cross-functional teams to align on project goals and deliverables.',
+  
   preview: {
-    logo: "/images/antares-logo.png",
+    logo: "/antares/antares-logo.png",
     title: "Antares Solar",
-    description: "A solar energy company that offers a PV Kit Sizer and a proposal generator.",
+    link: "https://antaressolar.com",
+    description: "A solar energy software that offers a PV Kit Sizer and a proposal generator.",
     shortStack: "Laravel, Python, Next.js, Prisma, Planetscale, MySQL, AWS, Vercel",
   }
 };
@@ -37,9 +41,13 @@ export const martPlus = {
   id: 'mart-plus',
   features: antaresFeatures,
   techStack: antaresTechStack,
+  mockup: "/mart-plus/mart-plus-mockup.png",
+  responsibilities: 'Engineered a comprehensive CRUD system for a supermarket application, facilitating seamless management of products, categories and tax. Implemented robust shopping cart and checkout functionalities, allowing users to interact, add products, and manage transactions efficiently. Executed proficient deployment of the project on Vercel, ensuring optimal performance and user experience.',
   preview: {
-    logo: "/images/MartPlus-logo.png",
+    logo: "/mart-plus/mart-plus-logo.png",
     title: "Mart Plus",
+    link: "https://mart-plus.vercel.app/",
+    code: "https://github.com/PortsZ/mart-plus",	
     description: "A Supermaket CRUD with a shopping cart and a checkout system.",
     shortStack: "Next.js, Prisma, Planetscale, MySQL, Vercel",
   }
@@ -47,13 +55,16 @@ export const martPlus = {
 
 export const volumeSpikeBot = {
   id: 'volume-spike-bot',
-  features: antaresFeatures,
-  techStack: antaresTechStack,
+  features: ['Volume Spike Detection', 'All Binance Pairs Tracking', 'Institutional Activity Tracking', 'Email Notifications'],
+  techStack: ['Python', 'Websockets', 'Binance API'],
+  mockup: "/volume-bot/volume-bot-mockup.png",
+  responsibilities: 'Developed a trading bot that uses volume spikes to predict price movements and track institutional activity. The bot is able to track all Binance pairs in parallel and send notifications to a Desired Email. The bot runs on CLI and was made for a client.',
   preview: {
-    logo: "/images/MartPlus-logo.png",
+    logo: "/volume-bot/volume-bot-logo.png",
     title: "Volume Spike Trading Bot",
-    description: "A Supermaket CRUD with a shopping cart and a checkout system.",
-    shortStack: "Next.js, Prisma, Planetscale, MySQL, Vercel",
+    code: "https://github.com/PortsZ/volume-spike-trade-bot",
+    description: "A trading bot that uses volume spikes to predict price movements and track institutional activity.",
+    shortStack: "Python, websockets, Binance API",
   }
 };
 
@@ -61,4 +72,4 @@ export const volumeSpikeBot = {
 
 
 
-export const projects:ProjectInterface[] = [antares, martPlus]
+export const projects:ProjectInterface[] = [antares, martPlus, volumeSpikeBot]

@@ -3,60 +3,58 @@ import React from 'react';
 
 const AboutMe = () => {
   return (
-    <div className="p-8 w-full flex flex-col prose prose-h1:text-white prose-h2:text-zinc-300 prose-p:text-zinc-400 prose-indigo">
-      <h1 className="text-4xl font-bold mb-4">My Developer Journey</h1>
-
-      <div className="mb-8">
-        <h2 className="text-3xl font-semibold mb-2">The Academic Foundation (2017-2020)</h2>
-        <p>
-          My odyssey into the world of software development began in 2017, when I enrolled in a Bachelor&apos;s program in Computer Engineering.
-          My educational journey was steeped in traditional methods: we often wrote code on paper before implementing it on machines.
-          This rigorous academic environment laid a solid foundation for my understanding of programming.
-          From mastering C and diving into algorithms and data structures, to delving into code complexity and object-oriented programming in C++, I acquired a well-rounded skill set.
-          My academic career also gave me insights into specialized topics like compilers and databases.
+    <div className="p-8 w-full flex flex-col prose max-w-[85ch] prose-h1:text-white prose-h2:text-secondary prose-p:text-zinc-300 prose-indigo">
+       <h1 className="text-3xl font-semibold mb-6">My Journey</h1>
+      
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">The Pursuit of Academic Excellence</h2>
+        <p className="text-lg">
+          The start of my academic journey was marked by promise and a passion for technology. In 2017, I decided that Computer Engineering would be my path. For two and a half years, I was immersed in the universe of programming and engineering, soaking up all the knowledge I could. Everything changed, however, with the advent of the COVID-19 pandemic.
         </p>
-      </div>
-
-      <div className="mb-8">
-        <h2 className="text-3xl font-semibold mb-2">The Unexpected Detour (2020-2021)</h2>
-        <p>
-          Just as I was gaining momentum, the Covid-19 pandemic struck, forcing my university to shut down in 2020.
-          This unexpected hiatus led me to pivot toward the financial markets. For one and a half years, I immersed myself in financial analytics, investments, and trading, diversifying my skill set while waiting for academic life to resume.
+      </section>
+      
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">The Pandemic Year and Self-Taught Finance</h2>
+        <p className="text-lg">
+          With the halt of academic activities in 2020, I saw an opportunity for personal growth. I turned my living room into a private classroom, where I delved into the world of finance. I leveraged my programming skills to develop trading bots, and dove deep into stock and options trading.
         </p>
-      </div>
-
-      <div className="mb-8">
-        <h2 className="text-3xl font-semibold mb-2">A Life-Changing Return (2021)</h2>
-        <p>
-          In 2021, my university reopened with a plan to make up for lost time through three consecutive semesters.
-          I eagerly resumed my academic pursuits while also continuing my studies of financial markets, adding blockchain and cryptocurrencies to my repertoire.
-          However, tragedy struck on May 24th, 2021, when I lost my father to Covid-19. The financial strain necessitated a pause in my education as I stepped up to support my family.
+      </section>
+      
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">Return to Routine and the Fight Against Adversity</h2>
+        <p className="text-lg">
+          In 2021, the university resumed its activities, adapting to the new normal with online classes and three semesters in a single year. But life, unpredictable as ever, had other plans for me. The loss of my father to COVID-19 forced me to focus on my family&apos;s financial sustainability, a responsibility I took on with sorrow but determination.
         </p>
-      </div>
-
-      <div className="mb-8">
-        <h2 className="text-3xl font-semibold mb-2">Stepping into the Real World</h2>
-        <p>
-          I took on freelance programming jobs and started offering investment consulting services.
-          Opportunity knocked when a client of my mother&apos;s hair salon learned about my cryptocurrency expertise.
-          Starting in September 2021, I managed this client&apos;s investments, nearly tripling the portfolio value within just four months.
-          This journey continued until the end of the cryptocurrency market rally in April 2022.
+      </section>
+      
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">Opportunity in the Cryptocurrency Market</h2>
+        <p className="text-lg">
+          In this challenging landscape, a light appeared at the end of the tunnel. An investor approached me, interested in the skills I had acquired during my self-taught journey in finance. Together, we embarked on the adventure of cryptocurrencies. From an initial investment of $600,000, we nearly tripled that amount. However, professional and interpersonal differences led to the end of this collaboration in mid-2022.
         </p>
-      </div>
-
-      <div className="mb-8">
-        <h2 className="text-3xl font-semibold mb-2">Coming Full Circle</h2>
-        <p>
-          Despite the detours and challenges, I find myself returning to my roots as a software engineer.
-          I&apos;ve since shifted my focus back to coding, developing applications and continually honing my programming skills.
+      </section>
+      
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">Professional Reinvention and the Antares Project</h2>
+        <p className="text-lg">
+          Determined to give a new direction to my career, I dove headfirst into web development and created Antares, a software aimed at dimensioning solar kits. Combining Next.js and Laravel technologies, I developed a subscription service that not only serves as an amazing portfolio but also as a functional product that is already gaining its first customers.
         </p>
-      </div>
-
-      <div className="mb-8">
-        <p>
-          At my core, I am an engineer. This is my story, and it&apos;s far from over.
+      </section>
+      
+      <section className="mb-6">
+        <h2 className="text-2xl font-semibold mb-4">The Human Behind the Technical Skills</h2>
+        <p className="text-lg">
+          Away from the codes and numbers, I&apos;m a multifaceted individual. My hobbies include music—I play guitar, bass, and a bit of piano—and competitive games. I&apos;m fluent in multiple languages, and my rapid learning capability is perhaps my greatest asset. I&apos;m self-taught, have a knack for absorbing new knowledge, and I believe my child-like curiosity is one of my most valuable qualities.
         </p>
-      </div>
+      </section>
+      
+      <section>
+        <p className="text-lg">
+          Today, as I seek new opportunities and face personal challenges, such as my wife&apos;s health, I look back and see a journey of resilience, learning, and adaptation. I&apos;m ready for what comes next and eager to see where the next chapter of this story will take me.
+        </p>
+      </section>
+
+     
 
     </div>
   );

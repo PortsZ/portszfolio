@@ -15,9 +15,9 @@ export default function Home() {
   return (
     <main className="flex min-h-screen flex-col items-center justify-start scroll-smooth">
       
-        <Navbar/>
+       
       
-      <section className="flex min-h-screen w-full flex-grow items-center justify-center p-2 ss:p-8 sm:p-24">
+      <section id="home" className="flex min-h-screen w-full flex-grow items-center justify-center p-2 ss:p-8 sm:p-24">
         <Hero />
       </section>
       <section id="about" className="flex w-full items-center justify-center">
@@ -35,7 +35,7 @@ export default function Home() {
         </CardFlex>
       </section>
 
-      <section id='portfolio' className="flex w-full justify-center">
+      <section id='portfolio' className="flex w-full justify-center sm:p-8">
         <Portfolio />
       </section>
     </main>

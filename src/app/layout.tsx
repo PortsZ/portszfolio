@@ -1,3 +1,4 @@
+import Navbar from "@/components/navigation/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
 
@@ -13,7 +14,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="scroll-smooth">
-      <body className="min-h-screen bg-background text-white">{children}</body>
+      <body className="min-h-screen bg-background text-white">
+      <Navbar/>
+        {children}</body>
     </html>
   );
 }
