@@ -59,7 +59,7 @@ const SmallAbout = () => {
           <motion.li variants={childVariants}>🦠 COVID-19 led to a pivot toward financial markets</motion.li>
           <motion.li variants={childVariants}>📈 1.5 years in financial analytics, investments, and trading</motion.li>
           <motion.li variants={childVariants}>🌐 Added blockchain and cryptocurrencies to my skills</motion.li>
-          <motion.li variants={childVariants}>🙏 Lost my father, paused education to support my family</motion.li>
+          <motion.li variants={childVariants}>🙏 Lost my father, paused education to support my family ✝️</motion.li>
         </motion.ul>
       </motion.div>
 

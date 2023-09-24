@@ -39,11 +39,11 @@ const Navbar = () => {
         <li>
           <a href="/#portfolio">Portfolio</a>
         </li>
-        {/* <li>
+        <li>
           <a href="/JPPortesCV.pdf" download>
             Download CV
           </a>
-        </li> */}
+        </li>
         <li>
           <motion.div whileTap={{ scale: 0.9 }} onClick={handleCopyEmail}>
             {buttonText}

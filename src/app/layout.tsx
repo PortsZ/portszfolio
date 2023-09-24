@@ -1,6 +1,7 @@
 import Navbar from "@/components/navigation/Navbar";
 import "./globals.css";
 import type { Metadata } from "next";
+import Footer from "@/components/navigation/Footer";
 
 export const metadata: Metadata = {
   title: "JP Portes",
@@ -16,7 +17,9 @@ export default function RootLayout({
     <html lang="en" className="scroll-smooth">
       <body className="min-h-screen bg-background text-white">
       <Navbar/>
-        {children}</body>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
