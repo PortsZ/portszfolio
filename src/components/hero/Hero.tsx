@@ -1,5 +1,5 @@
 "use client";
-import React, { useEffect, useRef, useState } from "react";
+import React, { Suspense, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 import HeroCard from "./HeroCard";
 import Tilt from "react-parallax-tilt";
@@ -69,6 +69,8 @@ const Hero = () => {
       {/* <HeroCard>
       
       </HeroCard> */}
+      <Suspense fallback={<div className="flex h-[80vh] w-full items-center justify-center rounded-lg bg-opacity-100 bg-zinc-500 bg-cover bg-no-repeat 
+        sm:p-24 backdrop-blur-lg"></div>}>
       <Tilt
         transitionEasing="cubic-bezier(0,.91,.42,1)"
         scale={0.95}
@@ -108,6 +110,7 @@ const Hero = () => {
           </div>
        
       </Tilt>
+      </Suspense>
     </>
   );
 };
