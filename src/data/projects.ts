@@ -32,6 +32,7 @@ export const antares = {
     logo: "/antares/antares-logo.png",
     title: "Antares Solar",
     link: "https://antaressolar.com",
+    figma: "https://www.figma.com/file/kIw5lki20Ieh2fLl6qxiW0/Dimensionar?type=design&node-id=0%3A1&mode=design&t=1Za6i5kYZCirWmhY-1",
     description: "A solar energy software that offers a PV Kit Sizer and a proposal generator.",
     shortStack: "Laravel, Python, Next.js, Prisma, Planetscale, MySQL, AWS, Vercel",
   }

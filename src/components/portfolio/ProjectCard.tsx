@@ -46,6 +46,18 @@ const ProjectCard = ({ project }: { project: ProjectInterface }) => {
           >
             View Code
           </motion.button>
+          {project.preview.figma && 
+          <motion.button
+          disabled={!project.preview.figma}
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.95 }}
+          onClick={() => window.open(project.preview.figma, "_blank")}
+          className={` rounded bg-quaternary p-2 px-4 font-semibold ${
+            project.preview.figma ? "text-zinc-100" :  "pointer-events-none bg-opacity-60 text-zinc-300" 
+          }`}
+        >
+          View Figma
+        </motion.button>}
         </div>
         <h2 className="px-4 text-lg  text-secondary sm:px-8">
           Responsabilities

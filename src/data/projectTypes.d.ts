@@ -7,6 +7,7 @@ export interface ProjectInterface {
       logo: string;
       link?: string;
       code?: string;
+      figma?: string;
       shortStack: string;
     };
     techStack: string[];
