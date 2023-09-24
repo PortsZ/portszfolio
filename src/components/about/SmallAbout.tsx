@@ -82,6 +82,7 @@ const SmallAbout = () => {
         </motion.h2>
         <motion.ul className="list-disc list-inside text-zinc-400" variants={childVariants}>
           <motion.li variants={childVariants}>🐍 Python</motion.li>
+          <motion.li variants={childVariants}>🏗️ C/C++</motion.li>
           <motion.li variants={childVariants}>🌐 JavaScript/TypeScript</motion.li>
           <motion.li variants={childVariants}>⚛️ Next.js/React.js</motion.li>
           <motion.li variants={childVariants}>🗄️ SQL and NoSQL databases</motion.li>
