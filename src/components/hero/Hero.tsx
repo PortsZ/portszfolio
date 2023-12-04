@@ -100,7 +100,7 @@ const Hero = () => {
                   JP Portes
                 </span>
               </h1>
-              <h2 className="text-2xl  text-zinc-300">Fullstack Developer</h2>
+              <h2 className="text-2xl  text-zinc-300">Software Engineer</h2>
               <a href="#about" className="text-zinc-300 bg-primary p-2 px-4 rounded-full scroll-smooth" onClick={handleCopyEmail}>
                 <p className="text-black ">
                   {buttonText}
