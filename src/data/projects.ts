@@ -20,7 +20,7 @@ const antaresFeatures = [
   "Fully responsive with a configurable dashboard",
 ];  
 
-//!================================================================================================
+//*================================================================================================
 export const antares = {
   id: 'antares',
   features: antaresFeatures,
