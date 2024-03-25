@@ -40,7 +40,7 @@ export const antares = {
 
 export const martPlus = {
   id: 'mart-plus',
-  features: antaresFeatures,
+  features: ['CRUD', 'Authentication', 'Databases', 'Beautiful and responsive Front-end'],
   techStack: antaresTechStack,
   mockup: "/mart-plus/mart-plus-mockup.png",
   responsibilities: 'Engineered a comprehensive CRUD system for a supermarket application, facilitating seamless management of products, categories and tax. Implemented robust shopping cart and checkout functionalities, allowing users to interact, add products, and manage transactions efficiently. Executed proficient deployment of the project on Vercel, ensuring optimal performance and user experience.',
