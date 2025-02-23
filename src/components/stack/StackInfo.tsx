@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 const StackInfo = () => {
   return (
-    <motion.div className="relative z-50 flex w-full  items-center justify-start sm:p-24">
+    <motion.div className="relative z-50 flex w-full  items-center justify-center sm:p-24">
       <div className="p-auto container">
         <h2 className="p-4 text-center text-3xl font-bold">🛠️ My Tech Stack</h2>
 

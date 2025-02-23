@@ -56,7 +56,7 @@ const HeroCard = ({ children }: { children: ReactNode }) => {
           width: "100%",
           // transform: `rotateX(${cardRotateX}deg) rotateY(${cardRotateY}deg)`,
         }}
-        className="hover:drop-shadow-contrast2 rounded hover:transition-all hover:duration-200"
+        className="hover:drop-shadow-contrast2 rounded-sm hover:transition-all hover:duration-200"
       >
         {children}
       </motion.div>

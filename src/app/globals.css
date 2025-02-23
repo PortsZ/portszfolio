@@ -1,6 +1,51 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss';
+
+
+
+
+@theme {
+  --breakpoint-*: initial;
+  --breakpoint-xs: 480px;
+  --breakpoint-ss: 620px;
+  --breakpoint-sm: 768px;
+  --breakpoint-md: 1024px;
+  --breakpoint-lg: 1200px;
+  --breakpoint-xl: 1700px;
+  --breakpoint-xxl: 3000px;
+
+  --color-background: #111013;
+  --color-primary: #ff00bb;
+  --color-secondary: #38aecc;
+  --color-tertiary: #0090c1;
+  --color-quaternary: #a200ff;
+
+  --drop-shadow-sun: 0px 0px 50px #ffc505;
+  --drop-shadow-sun2: 0px 0px 15px #fff;
+  --drop-shadow-sidebar: 10px 0px 5px #3b2d00;
+  --drop-shadow-contrast: 0px 1px 2px #7b51ff;
+  --drop-shadow-contrast2: 0px 0px 5px #7b51ff;
+  --drop-shadow-product-nav: 0px 0px 5px #513d91;
+  --drop-shadow-product-nav-active: 0px 0px 1px #ffb300;
+  --drop-shadow-tab-nav-active: 0px -22px 0px #ffb300;
+
+  --background-image-gradient-radial: radial-gradient(var(--tw-gradient-stops));
+  --background-image-gradient-conic: conic-gradient(
+    from 180deg at 50% 50%,
+    var(--tw-gradient-stops)
+  );
+}
+
+
+
+
+/*
+  The default border color has changed to `currentColor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
 
 :root {
   --foreground-rgb: 0, 0, 0;
@@ -53,3 +98,4 @@
 .translateZ {
   transform: translateZ(40px);
 }
+@plugin "@tailwindcss/typography"

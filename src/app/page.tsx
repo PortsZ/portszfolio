@@ -17,7 +17,7 @@ export default function Home() {
       
        
       
-      <section id="home" className="flex min-h-screen w-full flex-grow items-center justify-center p-2 ss:p-8 sm:p-24">
+      <section id="home" className="flex min-h-screen w-full grow items-center justify-center p-2 ss:p-8 sm:p-24 overflow-hidden">
         <Hero />
       </section>
       <section id="about" className="flex w-full items-center justify-center">

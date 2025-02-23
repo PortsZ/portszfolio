@@ -73,7 +73,7 @@ const Portfolio = () => {
             onClick={() => {
               setSelectedProject(null);
             }}
-            className="fixed top-0 z-10 flex h-full w-full items-center justify-center bg-background bg-opacity-30 backdrop-blur-sm"
+            className="fixed top-0 z-10 flex h-full w-full items-center justify-center bg-background bg-opacity-30 backdrop-blur-xs"
           >
             <motion.div
               layoutId={selectedProject.id}

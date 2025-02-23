@@ -87,16 +87,16 @@ const Hero = () => {
             <div
               className=" bg-mouseHoverBlur flex md:w-3/4 lg:w-1/2 gap-2 w-11/12 flex-col items-start sm:items-end justify-center rounded bg-background bg-opacity-30 sm:p-16 p-4 backdrop-blur-3xl
                       
-                          before:pointer-events-none before:absolute before:left-0 before:top-0 before:z-[3] before:h-full before:w-full before:rounded-lg before:opacity-0 before:transition-all before:duration-500 before:content-['']
+                          before:pointer-events-none before:absolute before:left-0 before:top-0 before:z-3 before:h-full before:w-full before:rounded-lg before:opacity-0 before:transition-all before:duration-500 before:content-['']
 
-                          after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-[1] after:h-full after:w-full after:rounded-lg after:opacity-0
-                          after:transition-all after:duration-500 after:content-[''] before:hover:opacity-100
-                          after:group-hover:opacity-100"
+                          after:pointer-events-none after:absolute after:left-0 after:top-0 after:z-1 after:h-full after:w-full after:rounded-lg after:opacity-0
+                          after:transition-all after:duration-500 after:content-[''] hover:before:opacity-100
+                          group-hover:after:opacity-100"
               
             >
               <h1 className="text-5xl">
                 Hi! I&apos;m{" "}
-                <span className=" bg-gradient-to-br from-primary via-tertiary  to-primary bg-clip-text text-transparent">
+                <span className=" bg-linear-to-br from-primary via-tertiary  to-primary bg-clip-text text-transparent">
                   JP Portes
                 </span>
               </h1>
