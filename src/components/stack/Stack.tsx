@@ -6,7 +6,7 @@ import StackInfo from "./StackInfo";
 
 const Stack = () => {
   return (
-    <div className="flex w-full flex-col sm:flex-row ">
+    <div className="flex w-full flex-col sm:flex-row justify-center items-center">
       {/* <div className="flex w-full justify-end p-24">
         <StackIcon />
       </div> */}
